@@ -8,3 +8,10 @@ target-dir = "Target"
 [[bin]]
 name = "Build"
 path = "build.rs"
+
+[dependencies]
+unbug = { version = "0.2.0", features = ["enable"] }
+
+[features]
+default = []
+Debug = ["unbug/enable"]
