@@ -1,16 +1,16 @@
-[package]
-name = "crepes"
-version = "0.0.2"
-
-[build]
-target-dir = "Target"
-
 [[bin]]
 name = "Build"
 path = "build.rs"
+
+[build]
+target-dir = "Target"
 
 [dependencies]
 unbug = { version = "0.4.0" }
 
 [features]
 default = []
+
+[package]
+name = "crepes"
+version = "0.0.2"
